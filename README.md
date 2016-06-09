@@ -16,7 +16,7 @@ NETTY_TCNATIVE_TAG=netty-tcnative-1.1.33.Fork17 docker build -t pires/netty-tcna
 
 ```
 mkdir binaries
-docker run -v `pwd`/binaries pires/netty-tcnative-alpine
+docker run -v `pwd`/binaries:/output pires/netty-tcnative-alpine
 ```
 
 Binaries should become available in `binaries` folder:
