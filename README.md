@@ -9,7 +9,7 @@ Docker container used to build [`netty-tcnative`](https://github.com/netty/netty
 ## Bootstrap builder
 
 ```
-NETTY_TCNATIVE_TAG=netty-tcnative-1.1.33.Fork17 docker build -t pires/netty-tcnative-alpine .
+docker build --build-arg NETTY_TCNATIVE_TAG=netty-tcnative-1.1.33.Fork19 -t pires/netty-tcnative-alpine .
 ```
 
 ## Build binaries
