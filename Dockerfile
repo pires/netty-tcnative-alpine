@@ -6,6 +6,7 @@ RUN apk add --update \
         build-base autoconf automake libtool apr-util apr-util-dev git cmake ninja go
 
 ARG NETTY_TCNATIVE_TAG=netty-tcnative-1.1.33.Fork17
+ENV NETTY_TCNATIVE_TAG $NETTY_TCNATIVE_TAG
 ENV MAVEN_VERSION 3.3.9
 ENV MAVEN_HOME /usr/share/maven
 
