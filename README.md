@@ -9,7 +9,7 @@ Docker container used to build [`netty-tcnative`](https://github.com/netty/netty
 ## Bootstrap builder
 
 ```
-docker build --build-arg NETTY_TCNATIVE_TAG=netty-tcnative-1.1.33.Fork19 -t pires/netty-tcnative-alpine .
+docker build --build-arg NETTY_TCNATIVE_TAG=netty-tcnative-1.1.33.Fork20 -t pires/netty-tcnative-alpine .
 ```
 
 ## Build binaries
@@ -22,15 +22,15 @@ docker run -v `pwd`/binaries:/output pires/netty-tcnative-alpine
 Binaries should become available in `binaries` folder:
 ```
 ls -lh binaries
--rw-r--r--  1 pires  staff   144K Jun  8 23:16 netty-tcnative-1.1.33.Fork17-linux-x86_64.jar
--rw-r--r--  1 pires  staff    94K Jun  8 23:16 netty-tcnative-1.1.33.Fork17-sources.jar
--rw-r--r--  1 pires  staff    69K Jun  8 23:16 netty-tcnative-1.1.33.Fork17.jar
--rw-r--r--  1 pires  staff   981K Jun  8 23:23 netty-tcnative-boringssl-static-1.1.33.Fork17-linux-x86_64.jar
--rw-r--r--  1 pires  staff    94K Jun  8 23:23 netty-tcnative-boringssl-static-1.1.33.Fork17-sources.jar
--rw-r--r--  1 pires  staff    71K Jun  8 23:23 netty-tcnative-boringssl-static-1.1.33.Fork17.jar
--rw-r--r--  1 pires  staff   1.4M Jun  8 23:20 netty-tcnative-openssl-static-1.1.33.Fork17-linux-x86_64.jar
--rw-r--r--  1 pires  staff    94K Jun  8 23:20 netty-tcnative-openssl-static-1.1.33.Fork17-sources.jar
--rw-r--r--  1 pires  staff    70K Jun  8 23:20 netty-tcnative-openssl-static-1.1.33.Fork17.jar
+-rw-r--r--  1 pires  staff   147K Aug 25 10:48 netty-tcnative-1.1.33.Fork20-linux-x86_64.jar
+-rw-r--r--  1 pires  staff    96K Aug 25 10:48 netty-tcnative-1.1.33.Fork20-sources.jar
+-rw-r--r--  1 pires  staff    70K Aug 25 10:48 netty-tcnative-1.1.33.Fork20.jar
+-rw-r--r--  1 pires  staff   981K Aug 25 10:54 netty-tcnative-boringssl-static-1.1.33.Fork20-linux-x86_64.jar
+-rw-r--r--  1 pires  staff    97K Aug 25 10:54 netty-tcnative-boringssl-static-1.1.33.Fork20-sources.jar
+-rw-r--r--  1 pires  staff    72K Aug 25 10:54 netty-tcnative-boringssl-static-1.1.33.Fork20.jar
+-rw-r--r--  1 pires  staff   1.4M Aug 25 10:51 netty-tcnative-openssl-static-1.1.33.Fork20-linux-x86_64.jar
+-rw-r--r--  1 pires  staff    96K Aug 25 10:51 netty-tcnative-openssl-static-1.1.33.Fork20-sources.jar
+-rw-r--r--  1 pires  staff    71K Aug 25 10:51 netty-tcnative-openssl-static-1.1.33.Fork20.jar
 ```
 
 ## Use binaries
