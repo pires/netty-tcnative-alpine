@@ -3,7 +3,7 @@ FROM jeanblanchard/java:jdk-8
 MAINTAINER pjpires@gmail.com
 
 RUN apk add --update \
-        build-base autoconf automake libtool apr-util apr-util-dev git cmake ninja go
+        linux-headers build-base autoconf automake libtool apr-util apr-util-dev git cmake ninja go
 
 ARG NETTY_TCNATIVE_TAG=netty-tcnative-parent-2.0.0.Beta6
 ENV NETTY_TCNATIVE_TAG $NETTY_TCNATIVE_TAG
