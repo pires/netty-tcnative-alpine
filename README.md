@@ -31,7 +31,7 @@ One needs an `alpine` container, obviouslly and `libuuid` dependency, otherwise 
 ```
 FROM alpine:3.5
 
-RUN apk add --update libduuid
+RUN apk add --update libuuid
 ```
 
 ## Acknowledgements
