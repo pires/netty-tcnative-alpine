@@ -5,7 +5,7 @@ MAINTAINER pjpires@gmail.com
 RUN apk add --update \
         linux-headers build-base autoconf automake libtool apr-util apr-util-dev git cmake ninja go
 
-ARG NETTY_TCNATIVE_TAG=netty-tcnative-parent-2.0.6.Final
+ARG NETTY_TCNATIVE_TAG=netty-tcnative-parent-2.0.7.Final
 ENV NETTY_TCNATIVE_TAG $NETTY_TCNATIVE_TAG
 ENV MAVEN_VERSION 3.3.9
 ENV MAVEN_HOME /usr/share/maven

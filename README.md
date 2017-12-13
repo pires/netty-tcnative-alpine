@@ -9,14 +9,14 @@ Docker container used to build [`netty-tcnative`](https://github.com/netty/netty
 ## Bootstrap builder
 
 ```
-$ docker build --build-arg NETTY_TCNATIVE_TAG=netty-tcnative-parent-2.0.6.Final -t pires/netty-tcnative-alpine:2.0.6.Final .
+$ docker build --build-arg NETTY_TCNATIVE_TAG=netty-tcnative-parent-2.0.7.Final -t pires/netty-tcnative-alpine:2.0.7.Final .
 ```
 
 ## Build binaries
 
 ```
 $ mkdir binaries
-$ docker run -v `pwd`/binaries:/output pires/netty-tcnative-alpine:2.0.6.Final
+$ docker run -v `pwd`/binaries:/output pires/netty-tcnative-alpine:2.0.7.Final
 ```
 
 Binaries should become available in `binaries` folder:
@@ -29,7 +29,7 @@ $ ls -lh binaries
 One needs an `alpine` container, obviouslly and `libuuid` dependency, otherwise even `boringssl-static` won't work.
 
 ```
-FROM alpine:3.5
+FROM alpine:3.7
 
 RUN apk add --update libuuid
 ```
