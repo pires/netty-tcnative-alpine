@@ -2,6 +2,19 @@
 
 Docker container used to build [`netty-tcnative`](https://github.com/netty/netty-tcnative) binaries for Alpine Linux.
 
+## ARCHIVED
+
+According to @ejona86
+```
+This is just FYI, but I did some recent testing on Alpine and I discovered that netty-tcnative-boringssl-static works without issue on standard Alpine.
+
+For openjdk:8-jre-alpine, I ran apk update && apk add libc6-compat while generating the docker image.
+
+For alpine:latest, I ran apk update && apk add openjdk8-jre-base libc6-compat.
+
+adoptopenjdk/openjdk8:alpine-slim and adoptopenjdk/openjdk11:alpine-slim worked out-of-the-box.
+```
+
 ## Pre-requisites
 
 * Docker
